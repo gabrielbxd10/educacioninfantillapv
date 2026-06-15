@@ -296,6 +296,34 @@
   footer{background:var(--ink);color:rgba(255,255,255,.7);text-align:center;padding:36px 22px;font-size:.85rem;font-weight:600}
   footer a{color:var(--yellow)}
 
+  /* ---------- ESTRUCTURA DEL PLAN ---------- */
+  .estructura{background:linear-gradient(180deg,#fff,#F4F7FC)}
+  .estr-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;margin-top:46px;text-align:left}
+  .plan-mock{background:#fff;border:1px solid #ece6f2;border-radius:20px;padding:26px;box-shadow:var(--shadow);position:relative}
+  .plan-mock:before{content:"";position:absolute;top:0;left:26px;right:26px;height:4px;border-radius:0 0 4px 4px;background:linear-gradient(90deg,var(--teal),var(--purple))}
+  .pm-eyebrow{color:var(--teal);font-weight:800;font-size:.66rem;letter-spacing:1px;margin-bottom:5px}
+  .pm-title{font-family:'Baloo 2',sans-serif;font-weight:700;font-size:1.15rem;color:var(--ink);margin-bottom:12px}
+  .pm-ficha{display:grid;grid-template-columns:repeat(3,1fr);background:#F7F9FC;border-radius:10px;overflow:hidden;margin-bottom:12px}
+  .pm-ficha span{padding:8px 10px;border-right:1px solid #ece6f2;font-size:.6rem;color:var(--ink-soft);font-weight:700;display:flex;flex-direction:column;gap:2px}
+  .pm-ficha span:last-child{border-right:none}
+  .pm-ficha b{font-size:.8rem;color:var(--ink)}
+  .pm-box{background:rgba(46,196,182,.10);border-left:3px solid var(--teal);border-radius:8px;padding:9px 12px;font-size:.78rem;color:var(--ink-soft);font-weight:600;margin-bottom:12px}
+  .pm-box b{color:var(--teal)}
+  .pm-two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+  .pm-mini b{display:block;color:var(--purple);font-size:.62rem;font-weight:800;letter-spacing:.4px;margin-bottom:4px}
+  .pm-bar{height:7px;border-radius:5px;background:#eee7f3;margin-bottom:5px}
+  .pm-bar.s{width:70%} .pm-bar.t{width:88%}
+  .pm-label{color:var(--purple);font-size:.64rem;font-weight:800;letter-spacing:.5px;margin:4px 0 7px}
+  .pm-step{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+  .pm-step i{flex:0 0 18px;width:18px;height:18px;border-radius:50%;background:var(--purple);color:#fff;display:grid;place-items:center;font-size:.6rem;font-weight:800;font-style:normal}
+  .pm-step .l{flex:1;height:7px;border-radius:5px;background:#eee7f3}
+  .pm-tag{display:inline-block;margin-top:6px;background:rgba(255,107,107,.12);color:var(--coral);font-weight:800;font-size:.66rem;padding:4px 10px;border-radius:20px}
+  .estr-list{display:flex;flex-direction:column;gap:14px}
+  .estr-item{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #eee9f1;border-radius:14px;padding:14px 16px;box-shadow:var(--shadow-sm)}
+  .estr-item .ei{flex:0 0 40px;width:40px;height:40px;border-radius:11px;display:grid;place-items:center;font-size:1.2rem;background:#F4F7FC}
+  .estr-item b{display:block;font-size:1rem;color:var(--ink)}
+  .estr-item span{font-size:.88rem;color:var(--ink-soft);font-weight:600}
+
   /* ---------- RESPONSIVE ---------- */
   @media(max-width:920px){
     .hero-grid{grid-template-columns:1fr;gap:60px;text-align:center}
@@ -306,6 +334,7 @@
     .ach-grid,.diff-grid,.testi-grid{grid-template-columns:1fr}
     .incl-grid{grid-template-columns:1fr}
     .mod-grid{grid-template-columns:repeat(2,1fr)}
+    .estr-grid{grid-template-columns:1fr;gap:30px}
     .price-grid{grid-template-columns:1fr}
     .plan.best{transform:none}
     .author-grid{grid-template-columns:1fr;text-align:center}
@@ -470,6 +499,45 @@ src="https://www.facebook.com/tr?id=807179969060641&ev=PageView&noscript=1"
       <span class="big">🎁</span>
       <div style="text-align:left"><h3>BONO: +100 Actividades Lúdicas</h3><p>Un módulo extra de juegos y dinámicas para cualquier momento del día.</p></div>
       <span class="free">¡DE REGALO!</span>
+    </div>
+  </div>
+</section>
+
+<!-- ESTRUCTURA DEL PLAN -->
+<section class="sec estructura">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Calidad real, no relleno</span>
+    <h2 class="reveal">Así está estructurado cada plan de clase</h2>
+    <p class="sub reveal">Cada plan es completo y cabe en una sola página: lo abres, lo imprimes y das tu clase sin improvisar.</p>
+    <div class="estr-grid">
+      <div class="plan-mock reveal">
+        <div class="pm-eyebrow">MÓDULO 03 · PLAN 12</div>
+        <div class="pm-title">Saltos con aros de colores</div>
+        <div class="pm-ficha">
+          <span>EDAD<b>3-4 años</b></span>
+          <span>DURACIÓN<b>35 min</b></span>
+          <span>ÁREA<b>Motricidad</b></span>
+        </div>
+        <div class="pm-box"><b>OBJETIVO ·</b> Coordinar el salto con ambos pies a través del juego.</div>
+        <div class="pm-two">
+          <div class="pm-mini"><b>APRENDIZAJES</b><div class="pm-bar t"></div><div class="pm-bar s"></div></div>
+          <div class="pm-mini"><b>MATERIALES</b><div class="pm-bar"></div><div class="pm-bar s"></div></div>
+        </div>
+        <div class="pm-label">DESARROLLO PASO A PASO</div>
+        <div class="pm-step"><i>1</i><span class="l"></span></div>
+        <div class="pm-step"><i>2</i><span class="l"></span></div>
+        <div class="pm-step"><i>3</i><span class="l"></span></div>
+        <span class="pm-tag">+ Variación · Tip del docente</span>
+      </div>
+      <div class="estr-list">
+        <div class="estr-item reveal"><div class="ei">📋</div><div><b>Ficha técnica</b><span>Edad, duración, área y objetivo de un vistazo.</span></div></div>
+        <div class="estr-item reveal"><div class="ei">🎯</div><div><b>Objetivo de aprendizaje</b><span>Qué van a lograr los niños, claro y concreto.</span></div></div>
+        <div class="estr-item reveal"><div class="ei">🧰</div><div><b>Materiales y aprendizajes</b><span>Lo que necesitas (¡o nada, en las dinámicas sin material!).</span></div></div>
+        <div class="estr-item reveal"><div class="ei">🌅</div><div><b>Inicio / acogida</b><span>Cómo arrancar y captar la atención del grupo.</span></div></div>
+        <div class="estr-item reveal"><div class="ei">📝</div><div><b>Desarrollo paso a paso</b><span>Instrucciones detalladas para guiar la clase sin dudar.</span></div></div>
+        <div class="estr-item reveal"><div class="ei">⭐</div><div><b>Actividad principal y cierre</b><span>El momento-pico y cómo terminar con calma.</span></div></div>
+        <div class="estr-item reveal"><div class="ei">🔄</div><div><b>Variación y tip del docente</b><span>Cómo adaptarlo y un consejo práctico de aula.</span></div></div>
+      </div>
     </div>
   </div>
 </section>
