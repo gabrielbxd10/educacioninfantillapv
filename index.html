@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>+1000 Planes de Clase de Educación Inicial — Listos para Imprimir y Aplicar</title>
+<meta name="description" content="Más de 1000 planes de clase completos de educación inicial en español. Listos para imprimir y aplicar hoy mismo. Acceso vitalicio + bonos de regalo.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@500;600;700;800&display=swap');
+  :root{
+    --coral:#FF6B6B;
+    --coral-dark:#ee5a5a;
+    --orange:#FF8E53;
+    --teal:#2EC4B6;
+    --teal-dark:#21a99c;
+    --yellow:#FFD93D;
+    --purple:#6C5CE7;
+    --purple-dark:#5849c9;
+    --pink:#FF6FB5;
+    --cream:#FFF9F0;
+    --ink:#2D2A45;
+    --ink-soft:#5b5773;
+    --white:#ffffff;
+    --shadow:0 18px 50px rgba(45,42,69,.14);
+    --shadow-sm:0 8px 24px rgba(45,42,69,.10);
+    --radius:24px;
+    --radius-lg:34px;
+    --maxw:1140px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden;width:100%;max-width:100%}
+  body{
+    font-family:'Nunito','Segoe UI',system-ui,-apple-system,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+    position:relative;
+  }
+  img,svg,video,iframe,wistia-player{max-width:100%}
+  wistia-player{display:block;width:100%}
+  h1,h2,h3,.display{font-family:'Baloo 2','Nunito',sans-serif;line-height:1.12;letter-spacing:-.5px;overflow-wrap:break-word}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  section{position:relative}
+  a{text-decoration:none;color:inherit}
+
+  /* ---------- BOTONES ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;justify-content:center;
+    font-family:'Baloo 2',sans-serif;font-weight:700;font-size:1.18rem;
+    padding:18px 40px;border-radius:60px;border:none;cursor:pointer;
+    color:#fff;background:linear-gradient(135deg,var(--coral),var(--orange));
+    box-shadow:0 14px 30px rgba(255,107,107,.45);
+    transition:transform .2s ease,box-shadow .2s ease;
+    text-align:center;position:relative;overflow:hidden;
+  }
+  .btn:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 20px 40px rgba(255,107,107,.55)}
+  .btn:active{transform:translateY(0)}
+  .btn.green{background:linear-gradient(135deg,var(--teal),#27b3a5);box-shadow:0 14px 30px rgba(46,196,182,.45)}
+  .btn.green:hover{box-shadow:0 20px 40px rgba(46,196,182,.55)}
+  .btn-pulse{animation:pulse 2.2s infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+  .btn .shine{position:absolute;top:0;left:-120%;width:60%;height:100%;
+    background:linear-gradient(120deg,transparent,rgba(255,255,255,.55),transparent);
+    transform:skewX(-20deg);animation:shine 3.5s infinite}
+  @keyframes shine{0%{left:-120%}55%{left:140%}100%{left:140%}}
+
+  /* ---------- FORMAS FLOTANTES ---------- */
+  .blob{position:absolute;border-radius:50%;filter:blur(8px);opacity:.5;z-index:0;pointer-events:none}
+  .float{animation:float 7s ease-in-out infinite}
+  .float2{animation:float 9s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-26px) rotate(8deg)}}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:radial-gradient(120% 120% at 20% 0%,#FFE9D6 0%,#FFF9F0 45%,#EAF8F6 100%);
+    padding:26px 0 90px;overflow:hidden;
+  }
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:6px 0 30px}
+  .logo{display:flex;align-items:center;gap:10px;font-family:'Baloo 2';font-weight:800;font-size:1.25rem}
+  .logo .mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff;font-size:1.3rem;box-shadow:var(--shadow-sm)}
+  .topbar .tag{background:#fff;border:2px solid #ffe0c2;color:var(--orange);font-weight:800;
+    padding:8px 16px;border-radius:40px;font-size:.85rem}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+  .hero-inner{max-width:760px;margin:0 auto;text-align:center}
+  .hero-inner .vsl{margin:26px auto 30px}
+  .hero-inner .lead{margin-left:auto;margin-right:auto}
+  .hero-inner .micro{justify-content:center}
+  .badge-top{display:inline-flex;align-items:center;gap:8px;background:#fff;
+    box-shadow:var(--shadow-sm);padding:8px 16px;border-radius:40px;font-weight:800;
+    color:var(--purple);font-size:.85rem;margin-bottom:22px}
+  .badge-top .dot{width:9px;height:9px;border-radius:50%;background:var(--teal);animation:blink 1.4s infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+  .hero h1{font-size:clamp(2.3rem,5vw,3.7rem);color:var(--ink);margin-bottom:18px}
+  .hero h1 .hl{position:relative;color:var(--coral)}
+  .hero h1 .hl svg{position:absolute;left:0;bottom:-10px;width:100%;height:14px}
+  .hero p.lead{font-size:1.22rem;color:var(--ink-soft);max-width:560px;margin-bottom:30px;font-weight:600}
+  .hero .micro{display:flex;flex-wrap:wrap;gap:18px;margin-top:24px;font-weight:700;color:var(--ink-soft);font-size:.95rem}
+  .hero .micro span{display:flex;align-items:center;gap:7px}
+  .hero .micro .ic{color:var(--teal);font-weight:900}
+
+  /* mockup */
+  .mockup{position:relative;display:grid;place-items:center}
+  .stack{position:relative;width:300px;height:380px}
+  .card-pdf{position:absolute;width:230px;height:320px;border-radius:18px;background:#fff;
+    box-shadow:var(--shadow);padding:20px;border:1px solid #f0e8df}
+  .card-pdf .bar{height:10px;border-radius:6px;background:#ffe3d2;margin-bottom:9px}
+  .card-pdf .bar.s{width:60%}
+  .card-pdf .bar.t{background:#d7f3ef;width:80%}
+  .card-pdf .bar.p{background:#e6e1fb;width:45%}
+  .card-pdf .chip{display:inline-block;font-size:.6rem;font-weight:800;padding:4px 9px;border-radius:20px;
+    background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff;margin-bottom:14px}
+  .card-pdf h4{font-size:.95rem;color:var(--ink);margin-bottom:12px}
+  .pdf-1{transform:rotate(-9deg) translate(-30px,20px);z-index:1}
+  .pdf-2{transform:rotate(5deg) translate(45px,-5px);z-index:2}
+  .pdf-3{transform:rotate(-2deg);z-index:3}
+  .sticker{position:absolute;z-index:5;font-weight:900;font-family:'Baloo 2';color:#fff;
+    border-radius:50%;display:grid;place-items:center;text-align:center;line-height:1;box-shadow:var(--shadow)}
+  .sticker.s1{width:110px;height:110px;background:linear-gradient(135deg,var(--coral),var(--orange));
+    top:-26px;right:-14px;font-size:1.5rem;transform:rotate(12deg)}
+  .sticker.s1 small{display:block;font-size:.62rem;font-weight:800;margin-top:3px;letter-spacing:.5px}
+  .sticker.s2{width:90px;height:90px;background:linear-gradient(135deg,var(--teal),#1fb0a2);
+    bottom:-18px;left:-22px;font-size:.78rem;padding:10px}
+
+  /* ---------- BARRA URGENCIA ---------- */
+  .urg{background:linear-gradient(90deg,var(--purple),var(--pink));color:#fff;text-align:center;
+    padding:13px 16px;font-weight:800;font-size:1rem;position:sticky;top:0;z-index:60;box-shadow:0 4px 18px rgba(108,92,231,.35)}
+  .urg b{color:var(--yellow)}
+
+  /* ---------- SECCIONES GENERAL ---------- */
+  .sec{padding:80px 0}
+  .eyebrow{display:inline-block;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;
+    font-size:.82rem;color:var(--coral);background:#fff;padding:7px 16px;border-radius:30px;
+    box-shadow:var(--shadow-sm);margin-bottom:16px}
+  .sec h2{font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:14px;color:var(--ink)}
+  .sec .sub{font-size:1.12rem;color:var(--ink-soft);max-width:640px;margin:0 auto 10px;font-weight:600}
+  .center{text-align:center}
+  .center .sub{margin-left:auto;margin-right:auto}
+
+  /* reveal animation */
+  .reveal{opacity:0;transform:translateY(34px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- PARA QUIÉN ---------- */
+  .who-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px}
+  .who{background:#fff;border-radius:var(--radius);padding:30px 22px;text-align:center;
+    box-shadow:var(--shadow-sm);border:1px solid #f3ece3;transition:transform .25s,box-shadow .25s}
+  .who:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+  .who .emo{font-size:2.6rem;display:block;margin-bottom:12px}
+  .who h3{font-size:1.18rem;margin-bottom:6px}
+  .who p{font-size:.95rem;color:var(--ink-soft);font-weight:600}
+
+  /* ---------- CONSEGUIR ---------- */
+  .achieve{background:linear-gradient(180deg,#fff,#FFF4E9)}
+  .ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+  .ach{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow-sm);
+    border-top:5px solid var(--teal);position:relative}
+  .ach:nth-child(3n+1){border-top-color:var(--coral)}
+  .ach:nth-child(3n+2){border-top-color:var(--purple)}
+  .ach .ic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:1.6rem;
+    background:#FFF1E6;margin-bottom:16px}
+  .ach h3{font-size:1.2rem;margin-bottom:8px}
+  .ach p{color:var(--ink-soft);font-weight:600;font-size:.98rem}
+
+  /* ---------- INCLUYE ---------- */
+  .incl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:40px;max-width:840px;margin-left:auto;margin-right:auto}
+  .incl{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:18px;padding:20px 22px;box-shadow:var(--shadow-sm)}
+  .incl .check{flex:0 0 34px;width:34px;height:34px;border-radius:50%;background:var(--teal);color:#fff;
+    display:grid;place-items:center;font-weight:900;font-size:1.1rem;box-shadow:0 6px 14px rgba(46,196,182,.4)}
+  .incl b{display:block;font-size:1.06rem;color:var(--ink)}
+  .incl span{font-size:.92rem;color:var(--ink-soft);font-weight:600}
+
+  /* ---------- MÓDULOS ---------- */
+  .mods{background:radial-gradient(120% 100% at 80% 0%,#EAF8F6,#FFF9F0 60%)}
+  .mod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px}
+  .mod{display:flex;gap:12px;align-items:center;background:#fff;border-radius:14px;padding:12px 14px;
+    box-shadow:var(--shadow-sm);border:1px solid #f2ebe2;transition:transform .2s,box-shadow .2s}
+  .mod:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .mod .num{flex:0 0 38px;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+    font-family:'Baloo 2';font-weight:800;font-size:1.1rem;color:#fff}
+  .mod h3{font-size:.96rem;margin:0;line-height:1.2}
+  .bonus-mod{margin-top:22px;background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff;
+    border-radius:24px;padding:30px;display:flex;align-items:center;gap:22px;box-shadow:var(--shadow)}
+  .bonus-mod .big{font-size:3rem}
+  .bonus-mod h3{color:#fff;font-size:1.5rem}
+  .bonus-mod p{color:rgba(255,255,255,.9);font-weight:600}
+  .bonus-mod .free{margin-left:auto;background:var(--yellow);color:var(--ink);font-weight:900;
+    padding:10px 22px;border-radius:40px;font-family:'Baloo 2';white-space:nowrap}
+
+  /* ---------- DIFERENCIALES ---------- */
+  .diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+  .diff{text-align:center;padding:20px}
+  .diff .ring{width:84px;height:84px;border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;
+    font-size:2.2rem;background:#fff;box-shadow:var(--shadow-sm)}
+  .diff h3{font-size:1.2rem;margin-bottom:6px}
+  .diff p{color:var(--ink-soft);font-weight:600}
+
+  /* ---------- BONOS ---------- */
+  .bonos{background:linear-gradient(180deg,#FFF4E9,#fff)}
+  .bono-list{max-width:760px;margin:46px auto 0;display:flex;flex-direction:column;gap:16px}
+  .bono{display:flex;gap:20px;align-items:center;background:#fff;border-radius:20px;padding:22px 24px;
+    box-shadow:var(--shadow-sm);border:2px dashed #ffd9b8;position:relative}
+  .bono .gift{flex:0 0 60px;width:60px;height:60px;border-radius:18px;display:grid;place-items:center;
+    font-size:1.8rem;background:linear-gradient(135deg,var(--coral),var(--orange))}
+  .bono .info{flex:1}
+  .bono .info b{display:block;font-size:1.15rem;font-family:'Baloo 2'}
+  .bono .info span{font-size:.92rem;color:var(--ink-soft);font-weight:600}
+  .bono .val{text-align:right;white-space:nowrap}
+  .bono .val .old{text-decoration:line-through;color:#b9b2c4;font-weight:700;font-size:1rem}
+  .bono .val .new{color:var(--teal);font-weight:900;font-family:'Baloo 2';font-size:1.15rem}
+  .bono-total{margin-top:24px;text-align:center;background:var(--ink);color:#fff;border-radius:24px;padding:26px;box-shadow:var(--shadow)}
+  .bono-total .small{font-weight:700;opacity:.8}
+  .bono-total .amt{font-family:'Baloo 2';font-size:2.4rem;color:var(--yellow)}
+  .bono-total .amt s{color:rgba(255,255,255,.55);font-size:1.5rem;margin-right:10px}
+
+  /* ---------- TESTIMONIO ---------- */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+  .testi{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);position:relative}
+  .testi .stars{color:var(--yellow);font-size:1.1rem;margin-bottom:12px;letter-spacing:2px}
+  .testi p{color:var(--ink-soft);font-weight:600;font-style:italic;margin-bottom:18px}
+  .testi .who2{display:flex;align-items:center;gap:12px}
+  .testi .av{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;font-family:'Baloo 2'}
+  .testi .who2 b{display:block;font-size:1rem}
+  .testi .who2 span{font-size:.84rem;color:var(--ink-soft);font-weight:600}
+
+  /* ---------- CONTADOR ---------- */
+  .count-sec{background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff;text-align:center;padding:60px 0}
+  .count-sec h2{color:#fff}
+  .timer{display:flex;justify-content:center;gap:16px;margin:30px 0 6px}
+  .tbox{background:rgba(255,255,255,.16);backdrop-filter:blur(6px);border-radius:18px;padding:16px 10px;min-width:88px}
+  .tbox .n{font-family:'Baloo 2';font-size:2.6rem;line-height:1;display:block}
+  .tbox .l{font-size:.78rem;text-transform:uppercase;letter-spacing:1px;opacity:.85;font-weight:700}
+
+  /* ---------- PRECIOS ---------- */
+  .price-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:26px;max-width:900px;margin:50px auto 0;align-items:center}
+  .offer-wrap{max-width:480px;margin:50px auto 0}
+  .local-note{background:#EAF8F6;border:1px solid #d7f3ef;color:var(--teal-dark);font-weight:700;
+    font-size:.92rem;border-radius:14px;padding:12px 16px;margin-bottom:6px}
+  .plan{background:#fff;border-radius:var(--radius-lg);padding:38px 32px;box-shadow:var(--shadow);position:relative;border:2px solid #f1eae1}
+  .plan.best{border:3px solid var(--coral);box-shadow:0 26px 60px rgba(255,107,107,.28);transform:scale(1.03)}
+  .plan .ribbon{position:absolute;top:-16px;left:50%;transform:translateX(-50%);
+    background:linear-gradient(135deg,var(--coral),var(--orange));color:#fff;font-weight:800;
+    padding:8px 22px;border-radius:30px;font-size:.85rem;box-shadow:var(--shadow-sm);white-space:nowrap}
+  .plan h3{font-size:1.5rem;margin-bottom:6px}
+  .plan .ptext{color:var(--ink-soft);font-weight:600;margin-bottom:18px;font-size:.95rem}
+  .plan .price{font-family:'Baloo 2';margin-bottom:4px}
+  .plan .price .cur{font-size:1.3rem;vertical-align:top;color:var(--ink-soft)}
+  .plan .price .big{font-size:3.6rem;color:var(--ink)}
+  .plan.best .price .big{color:var(--coral)}
+  .plan .was{color:#b9b2c4;text-decoration:line-through;font-weight:700;margin-bottom:18px}
+  .plan ul{list-style:none;margin:20px 0 26px;text-align:left}
+  .plan li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;font-weight:600;color:var(--ink)}
+  .plan li .c{color:var(--teal);font-weight:900;flex:0 0 auto}
+  .plan li.off{color:#bcb6c6}
+  .plan li.off .c{color:#d8d3df}
+  .plan .btn{width:100%}
+  .guarantee-mini{font-size:.85rem;color:var(--ink-soft);margin-top:14px;font-weight:700}
+
+  /* ---------- GARANTÍA ---------- */
+  .guar{background:linear-gradient(180deg,#fff,#EAF8F6)}
+  .guar-box{max-width:780px;margin:0 auto;background:#fff;border-radius:var(--radius-lg);padding:44px;
+    box-shadow:var(--shadow);display:flex;gap:30px;align-items:center;border:2px solid #d7f3ef}
+  .guar-seal{flex:0 0 130px;width:130px;height:130px;border-radius:50%;display:grid;place-items:center;
+    text-align:center;color:#fff;font-family:'Baloo 2';font-weight:800;line-height:1.1;
+    background:linear-gradient(135deg,var(--teal),#1fb0a2);box-shadow:0 14px 30px rgba(46,196,182,.45)}
+  .guar-seal .d{font-size:2.6rem}
+  .guar-box h3{font-size:1.6rem;margin-bottom:10px}
+  .guar-box p{color:var(--ink-soft);font-weight:600}
+
+  /* ---------- AUTORA ---------- */
+  .author-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:40px;align-items:center;max-width:920px;margin:46px auto 0}
+  .author-photo{aspect-ratio:1;border-radius:var(--radius-lg);background:linear-gradient(135deg,var(--purple),var(--pink));
+    display:grid;place-items:center;font-size:5rem;box-shadow:var(--shadow)}
+  .author-text h3{font-size:1.8rem;margin-bottom:6px}
+  .author-text .role{color:var(--coral);font-weight:800;margin-bottom:16px}
+  .author-text p{color:var(--ink-soft);font-weight:600;margin-bottom:14px}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:780px;margin:46px auto 0;display:flex;flex-direction:column;gap:14px}
+  .faq-item{background:#fff;border-radius:18px;box-shadow:var(--shadow-sm);overflow:hidden;border:1px solid #f2ebe2}
+  .faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:22px 24px;
+    font-family:'Baloo 2';font-weight:700;font-size:1.1rem;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .faq-q .plus{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:#FFF1E6;color:var(--coral);
+    display:grid;place-items:center;font-size:1.3rem;transition:transform .3s}
+  .faq-item.open .plus{transform:rotate(45deg);background:var(--coral);color:#fff}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;color:var(--ink-soft);font-weight:600}
+  .faq-a div{padding:0 24px 22px}
+
+  /* ---------- CTA FINAL ---------- */
+  .final{background:radial-gradient(120% 120% at 50% 0%,#FFE9D6,#FFF9F0);text-align:center;padding:90px 0}
+  .final h2{font-size:clamp(2rem,4.5vw,3.2rem);margin-bottom:16px}
+  .final p{font-size:1.2rem;color:var(--ink-soft);font-weight:600;max-width:600px;margin:0 auto 30px}
+  .final .micro{margin-top:22px;color:var(--ink-soft);font-weight:700;font-size:.95rem}
+
+  footer{background:var(--ink);color:rgba(255,255,255,.7);text-align:center;padding:36px 22px;font-size:.85rem;font-weight:600}
+  footer a{color:var(--yellow)}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:920px){
+    .hero-grid{grid-template-columns:1fr;gap:60px;text-align:center}
+    .hero p.lead{margin-left:auto;margin-right:auto}
+    .hero .micro{justify-content:center}
+    .hero .badge-top{margin-left:auto;margin-right:auto}
+    .who-grid{grid-template-columns:repeat(2,1fr)}
+    .ach-grid,.diff-grid,.testi-grid{grid-template-columns:1fr}
+    .incl-grid{grid-template-columns:1fr}
+    .mod-grid{grid-template-columns:repeat(2,1fr)}
+    .price-grid{grid-template-columns:1fr}
+    .plan.best{transform:none}
+    .author-grid{grid-template-columns:1fr;text-align:center}
+    .author-photo{max-width:230px;margin:0 auto}
+    .guar-box{flex-direction:column;text-align:center}
+    .bonus-mod{flex-direction:column;text-align:center}
+    .bonus-mod .free{margin:0}
+  }
+  @media(max-width:560px){
+    .who-grid{grid-template-columns:1fr}
+    .timer{flex-wrap:wrap}
+    .tbox{min-width:70px}
+    .bono{flex-wrap:wrap}
+    .bono .val{text-align:left;width:100%}
+    .btn{font-size:1.05rem;padding:16px 28px;width:100%}
+  }
+  /* VSL */
+  .vsl{width:100%;max-width:330px;margin:0 auto;border-radius:22px;overflow:hidden;
+       box-shadow:var(--shadow);background:#000}
+  wistia-player[media-id='941qto2fru']:not(:defined){
+       background:center / contain no-repeat url('https://fast.wistia.com/embed/medias/941qto2fru/swatch');
+       display:block;filter:blur(5px);padding-top:177.78%;}
+</style>
+<script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/941qto2fru.js" async type="module"></script>
+</head>
+<body>
+
+<!-- BARRA DE URGENCIA -->
+<div class="urg">🔥 OFERTA DE LANZAMIENTO — <b>Hasta 60% OFF solo hoy</b> · Acceso inmediato + bonos de regalo 🎁</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="logo"><span class="mark">🎨</span> Aula Creativa</div>
+      <span class="tag">+1000 Planes Listos</span>
+    </div>
+    <div class="hero-inner">
+      <span class="badge-top"><span class="dot"></span> Recurso N°1 para docentes de inicial</span>
+      <h1>Más de <span class="hl">1000 Planes de Clase<svg viewBox="0 0 300 14" preserveAspectRatio="none"><path d="M2 9 C 80 2, 220 2, 298 8" stroke="#FFD93D" stroke-width="6" fill="none" stroke-linecap="round"/></svg></span> de Educación Inicial, listos para imprimir y aplicar HOY</h1>
+      <div class="vsl">
+        <wistia-player media-id="941qto2fru" aspect="0.5625"></wistia-player>
+      </div>
+      <p class="lead">Olvídate de pasar horas planificando cada noche. Recibe planes <b>completos, paso a paso y de una sola página</b> — en español, organizados por módulos y listos para llevar al aula mañana mismo.</p>
+      <a href="#precios" class="btn btn-pulse"><span class="shine"></span>Quiero mis +1000 planes ahora →</a>
+      <div class="micro">
+        <span><span class="ic">✓</span> Acceso vitalicio</span>
+        <span><span class="ic">✓</span> Descarga inmediata</span>
+        <span><span class="ic">✓</span> Garantía de 7 días</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PARA QUIÉN ES -->
+<section class="sec">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Hecho para ti</span>
+    <h2 class="reveal">¿Para quién es este recurso?</h2>
+    <p class="sub reveal">Si trabajas o convives con niños de 0 a 6 años, esto te va a cambiar la semana.</p>
+    <div class="who-grid">
+      <div class="who reveal"><span class="emo">👩‍🏫</span><h3>Maestras de inicial</h3><p>Planifica en minutos y recupera tus tardes libres.</p></div>
+      <div class="who reveal"><span class="emo">🏫</span><h3>Jardines y estudios</h3><p>Un repositorio listo para todo tu equipo docente.</p></div>
+      <div class="who reveal"><span class="emo">👩‍👧</span><h3>Mamás y papás</h3><p>Actividades con sentido para hacer en casa, sin pantallas.</p></div>
+      <div class="who reveal"><span class="emo">🧩</span><h3>Profes de apoyo</h3><p>Incluye inclusión y públicos especiales (TEA y más).</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ VAS A CONSEGUIR -->
+<section class="sec achieve">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Resultados reales</span>
+    <h2 class="reveal">Esto es lo que vas a conseguir</h2>
+    <div class="ach-grid">
+      <div class="ach reveal"><div class="ic">⏰</div><h3>Recupera tu tiempo</h3><p>Deja de planificar de cero cada noche. Abre, imprime y aplica. Ahorra horas cada semana.</p></div>
+      <div class="ach reveal"><div class="ic">🎯</div><h3>Clases con objetivo claro</h3><p>Cada plan tiene un objetivo pedagógico definido y un paso a paso que de verdad funciona.</p></div>
+      <div class="ach reveal"><div class="ic">🌈</div><h3>Niños más enganchados</h3><p>Actividades lúdicas que captan la atención y respetan cada etapa del desarrollo.</p></div>
+      <div class="ach reveal"><div class="ic">💪</div><h3>Más seguridad docente</h3><p>Llega al aula con todo resuelto y la confianza de saber exactamente qué vas a hacer.</p></div>
+      <div class="ach reveal"><div class="ic">📚</div><h3>Cubre todas las áreas</h3><p>Lenguaje, motricidad, lógica, arte, emociones… nada se queda afuera de tu planificación.</p></div>
+      <div class="ach reveal"><div class="ic">🖨️</div><h3>Cero complicaciones</h3><p>PDF listo para imprimir, de una página por clase. Sin programas raros ni configuraciones.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ INCLUYE -->
+<section class="sec">
+  <div class="wrap center">
+    <span class="eyebrow reveal">El paquete completo</span>
+    <h2 class="reveal">¿Qué incluye tu acceso?</h2>
+    <p class="sub reveal">Todo digital, todo tuyo, para siempre.</p>
+    <div class="incl-grid">
+      <div class="incl reveal"><span class="check">✓</span><div><b>+1000 planes de clase completos</b><span>Organizados en 10 módulos por área de desarrollo.</span></div></div>
+      <div class="incl reveal"><span class="check">✓</span><div><b>Formato PDF de una página</b><span>Cada plan listo para imprimir y llevar al aula.</span></div></div>
+      <div class="incl reveal"><span class="check">✓</span><div><b>Acceso vitalicio</b><span>Descárgalo hoy y úsalo para siempre, sin mensualidades.</span></div></div>
+      <div class="incl reveal"><span class="check">✓</span><div><b>+100 actividades de regalo</b><span>Un módulo extra de juegos y dinámicas lúdicas.</span></div></div>
+      <div class="incl reveal"><span class="check">✓</span><div><b>Descarga inmediata</b><span>Recibe el acceso en tu correo apenas confirmas.</span></div></div>
+      <div class="incl reveal"><span class="check">✓</span><div><b>Bonos exclusivos</b><span>Recursos adicionales para complementar tus clases.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MÓDULOS -->
+<section class="sec mods">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Todo organizado</span>
+    <h2 class="reveal">Los 20 módulos que vas a recibir</h2>
+    <p class="sub reveal">+1000 planes repartidos en 20 áreas. Encuentra lo que necesitas en segundos.</p>
+    <div class="mod-grid" style="text-align:left">
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#FF6B6B,#FF8E53)">1</div><h3>Fundamentos y Rutinas</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#6C5CE7,#FF6FB5)">2</div><h3>Lenguaje y Comunicación</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#2EC4B6,#1fb0a2)">3</div><h3>Desarrollo Motor</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#FFB13D,#FF8E53)">4</div><h3>Motricidad Fina</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#FF6B6B,#FF6FB5)">5</div><h3>Lógico-Matemático</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#6C5CE7,#5849c9)">6</div><h3>Desarrollo Socioemocional</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#2EC4B6,#6C5CE7)">7</div><h3>Exploración del Entorno</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#FFD93D,#FF8E53)">8</div><h3>Arte, Música y Expresión</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#FF6FB5,#6C5CE7)">9</div><h3>Juego Simbólico y Dramático</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#2EC4B6,#FF6B6B)">10</div><h3>Inclusión y Públicos Especiales</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#FF8E53,#FFD93D)">11</div><h3>Lectoescritura Inicial</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#6C5CE7,#2EC4B6)">12</div><h3>Estimulación Sensorial</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#FF6FB5,#FF8E53)">13</div><h3>Valores y Convivencia</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#2EC4B6,#FFD93D)">14</div><h3>Hábitos y Cuidado Personal</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#FF6B6B,#6C5CE7)">15</div><h3>Identidad y Autonomía</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#1fb0a2,#2EC4B6)">16</div><h3>Naturaleza y Medio Ambiente</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#6C5CE7,#FF6B6B)">17</div><h3>Cuentos y Narración</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#FFD93D,#FF6FB5)">18</div><h3>Psicomotricidad y Aire Libre</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#FF8E53,#FF6B6B)">19</div><h3>Fechas y Celebraciones</h3></div>
+      <div class="mod reveal"><div class="num" style="background:linear-gradient(135deg,#2EC4B6,#6C5CE7)">20</div><h3>Pensamiento Creativo (STEAM)</h3></div>
+    </div>
+    <div class="bonus-mod reveal">
+      <span class="big">🎁</span>
+      <div style="text-align:left"><h3>BONO: +100 Actividades Lúdicas</h3><p>Un módulo extra de juegos y dinámicas para cualquier momento del día.</p></div>
+      <span class="free">¡DE REGALO!</span>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIALES -->
+<section class="sec">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Por qué este y no otro</span>
+    <h2 class="reveal">Lo que nos hace diferentes</h2>
+    <div class="diff-grid">
+      <div class="diff reveal"><div class="ring">🎓</div><h3>Creado por especialistas</h3><p>Planes con fundamento pedagógico real, no actividades sueltas sacadas de internet.</p></div>
+      <div class="diff reveal"><div class="ring">📐</div><h3>Estructura profesional</h3><p>Objetivo, materiales, inicio, desarrollo, cierre y adaptación. Todo en cada plan.</p></div>
+      <div class="diff reveal"><div class="ring">🚀</div><h3>Ahorra horas de trabajo</h3><p>Lo que te tomaría meses preparar, lo tienes resuelto en un solo clic.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BONOS APILADOS -->
+<section class="sec bonos">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Bonos de regalo</span>
+    <h2 class="reveal">Y además, te llevas 5 bonos GRATIS 🎁</h2>
+    <p class="sub reveal">Al llevarte hoy el paquete completo, sumas estos 5 recursos extra sin pagar nada más.</p>
+    <div class="bono-list">
+      <div class="bono reveal"><div class="gift">🖍️</div><div class="info"><b>Dibujos para Colorear</b><span>Una colección de dibujos listos para imprimir y dar rienda suelta a la creatividad.</span></div><div class="val"><div class="new">GRATIS</div></div></div>
+      <div class="bono reveal"><div class="gift">🏅</div><div class="info"><b>Modelos de Certificados</b><span>Plantillas de certificados editables para premiar los logros de los pequeños.</span></div><div class="val"><div class="new">GRATIS</div></div></div>
+      <div class="bono reveal"><div class="gift">✏️</div><div class="info"><b>Ejercicios de Caligrafía</b><span>Práctica de escritura y trazos para desarrollar la motricidad fina.</span></div><div class="val"><div class="new">GRATIS</div></div></div>
+      <div class="bono reveal"><div class="gift">📘</div><div class="info"><b>Guía de Manejo Educación Infantil</b><span>Recursos prácticos para acompañar y guiar el aprendizaje en el aula.</span></div><div class="val"><div class="new">GRATIS</div></div></div>
+      <div class="bono reveal"><div class="gift">📓</div><div class="info"><b>Cuaderno de Actividades Infantiles</b><span>Cuaderno completo con actividades variadas para reforzar el aprendizaje.</span></div><div class="val"><div class="new">GRATIS</div></div></div>
+    </div>
+    <div class="bono-total reveal">
+      <div class="small">Valor real de todo el paquete + bonos</div>
+      <div class="amt"><s>$197</s> ¡Hoy solo $5,90!</div>
+      <div class="small">Pagas una sola vez. Es tuyo para siempre.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="sec">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Miles de docentes felices</span>
+    <h2 class="reveal">Lo que dicen quienes ya lo usan</h2>
+    <div class="testi-grid">
+      <div class="testi reveal"><div class="stars">★★★★★</div><p>"Me salvó la vida. Llegaba agotada y aún tenía que planificar. Ahora imprimo y listo. Mis tardes volvieron a ser mías."</p><div class="who2"><div class="av" style="background:var(--coral)">MP</div><div><b>María Paula G.</b><span>Maestra de inicial · Colombia</span></div></div></div>
+      <div class="testi reveal"><div class="stars">★★★★★</div><p>"La calidad me sorprendió. No son actividades sueltas, son planes completos con objetivo y cierre. Mis colegas me preguntan de dónde los saqué."</p><div class="who2"><div class="av" style="background:var(--teal)">JR</div><div><b>Jimena R.</b><span>Coordinadora de jardín · México</span></div></div></div>
+      <div class="testi reveal"><div class="stars">★★★★★</div><p>"Como mamá, lo uso en casa con mi hija. Actividades con sentido, sin pantallas. La mejor compra del año, y baratísimo."</p><div class="who2"><div class="av" style="background:var(--purple)">CL</div><div><b>Carla L.</b><span>Mamá · Argentina</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section class="sec" id="precios">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Oferta de lanzamiento</span>
+    <h2 class="reveal">Una inversión mínima, un ahorro enorme de tiempo</h2>
+    <p class="sub reveal">Pago único. Sin suscripciones. Acceso de por vida.</p>
+    <div class="offer-wrap">
+      <div class="plan best reveal">
+        <span class="ribbon">⭐ TODO INCLUIDO · Oferta de hoy</span>
+        <h3>Paquete Completo</h3>
+        <p class="ptext">+1000 planes + 10 módulos + todos los bonos de regalo.</p>
+        <div class="price"><span class="cur">US$</span><span class="big">5,90</span></div>
+        <div class="was">Antes US$ 49,99</div>
+        <div class="local-note reveal">💱 El precio se convierte <b>automáticamente a tu moneda local</b> al pagar.</div>
+        <ul>
+          <li><span class="c">✓</span> <b>+1000 planes de clase completos</b></li>
+          <li><span class="c">✓</span> Los 10 módulos por área de desarrollo</li>
+          <li><span class="c">✓</span> Formato PDF listo para imprimir</li>
+          <li><span class="c">✓</span> Acceso vitalicio (pago único)</li>
+          <li><span class="c">✓</span> 🎁 +100 actividades lúdicas de regalo</li>
+          <li><span class="c">✓</span> 🎨 Pack de artes, planificador y más bonos</li>
+        </ul>
+        <a href="#" class="btn btn-pulse"><span class="shine"></span>¡Quiero mi acceso ahora! →</a>
+        <div class="guarantee-mini">🔒 Pago seguro · Acceso inmediato · Garantía 7 días</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTÍA -->
+<section class="sec guar">
+  <div class="wrap">
+    <div class="guar-box reveal">
+      <div class="guar-seal"><div><span class="d">7</span><br>DÍAS</div></div>
+      <div>
+        <h3>Garantía incondicional de 7 días</h3>
+        <p>Prueba todos los planes sin riesgo. Si en 7 días sientes que no es para ti, te devolvemos el 100% de tu dinero — sin preguntas, sin complicaciones. <b>Todo el riesgo lo asumimos nosotros.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTORA -->
+<section class="sec">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Quién está detrás</span>
+    <h2 class="reveal">Sobre la autora</h2>
+    <div class="author-grid">
+      <div class="author-photo reveal">👩‍🏫</div>
+      <div class="author-text reveal" style="text-align:left">
+        <h3>Hecho por educadoras, para educadoras</h3>
+        <p class="role">Especialistas en Educación Inicial</p>
+        <p>Detrás de este material hay un equipo de docentes con años de experiencia real en el aula de educación inicial. Sabemos lo que es llegar a casa agotada y todavía tener que planificar — por eso creamos este recurso.</p>
+        <p>Cada plan fue pensado con fundamento pedagógico, respetando las etapas del desarrollo infantil y el día a día real de una sala. No es relleno: es el material que a nosotras nos hubiera gustado tener desde el primer día.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec achieve">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Dudas frecuentes</span>
+    <h2 class="reveal">Preguntas que quizás tengas</h2>
+    <div class="faq-list" style="text-align:left">
+      <div class="faq-item reveal"><button class="faq-q">¿Cómo recibo el material? <span class="plus">+</span></button><div class="faq-a"><div>Apenas confirmas tu compra, recibes acceso inmediato en tu correo para descargar todos los PDF. Sin esperas, sin envíos físicos.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q">¿Los planes están en español? <span class="plus">+</span></button><div class="faq-a"><div>Sí, el 100% del material está en español, listo para usar en cualquier país hispanohablante.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q">¿Necesito algún programa especial? <span class="plus">+</span></button><div class="faq-a"><div>No. Son archivos PDF que abres en cualquier celular, tablet o computadora, y puedes imprimir directamente. Nada que instalar.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q">¿Para qué edades sirven? <span class="plus">+</span></button><div class="faq-a"><div>Están diseñados para educación inicial (aproximadamente de 0 a 6 años). Muchos planes incluyen adaptaciones para distintas edades y contextos.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q">¿El pago es único o mensual? <span class="plus">+</span></button><div class="faq-a"><div>Es un pago único. Pagas una sola vez y el material es tuyo para siempre, con acceso vitalicio. Sin mensualidades.</div></div></div>
+      <div class="faq-item reveal"><button class="faq-q">¿Y si no me gusta? <span class="plus">+</span></button><div class="faq-a"><div>Tienes 7 días de garantía total. Si no es para ti, escribes y te devolvemos el 100% de tu dinero, sin preguntas.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final">
+  <span class="blob float" style="width:120px;height:120px;background:var(--yellow);top:30px;left:12%"></span>
+  <span class="blob float2" style="width:100px;height:100px;background:var(--teal);bottom:20px;right:14%"></span>
+  <div class="wrap">
+    <h2 class="reveal">Empieza a planificar en minutos, no en horas</h2>
+    <p class="reveal">Únete a las miles de docentes que ya recuperaron su tiempo con +1000 planes listos para aplicar. Hoy, al mejor precio del lanzamiento.</p>
+    <a href="#precios" class="btn btn-pulse reveal"><span class="shine"></span>Quiero mis +1000 planes ahora →</a>
+    <div class="micro reveal">🔒 Pago 100% seguro · Acceso inmediato · Garantía de 7 días</div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Aula Creativa · +1000 Planes de Clase de Educación Inicial · Todos los derechos reservados<br>
+  Este producto es un material digital descargable. <a href="#">Términos</a> · <a href="#">Privacidad</a> · <a href="#">Contacto</a>
+</footer>
+
+<script>
+  // ---- Reveal on scroll ----
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{ el.style.transitionDelay=(i%6*0.06)+'s'; io.observe(el); });
+
+  // ---- FAQ accordion ----
+  document.querySelectorAll('.faq-q').forEach(q=>{
+    q.addEventListener('click',()=>{
+      const item=q.parentElement, a=item.querySelector('.faq-a'), open=item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(it=>{it.classList.remove('open');it.querySelector('.faq-a').style.maxHeight=null;});
+      if(!open){ item.classList.add('open'); a.style.maxHeight=a.scrollHeight+'px'; }
+    });
+  });
+</script>
+</body>
+</html>
